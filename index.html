@@ -3,18 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Aish Creations - Personalized Gifts, 3D Miniatures, Custom Photo Albums, Fridge Magnets & Premium Photo Frames. Handcrafted with love in Chennai.">
+    <meta name="description" content="Aish Creations - Personalized Gifts, 3D Miniatures, Custom Photo Albums, Fridge Magnets & Premium Photo Frames. Handcrafted with love in Chennai. Order on WhatsApp!">
     <title>Aish Creations • Gifts • 3D Miniatures • Photo Albums • Fridge Magnets • Frames</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;family=Playfair+Display:wght@700&amp;display=swap');
+        
         body { font-family: 'Poppins', sans-serif; }
         .heading-font { font-family: 'Playfair Display', sans-serif; }
-        .hero-bg { background: linear-gradient(135deg, #ff8fab 0%, #c77dff 30%, #7b9cff 60%, #00d4ff 100%); animation: gradientShift 15s ease infinite; }
-        @keyframes gradientShift { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
-        .product-card { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
-        .product-card:hover { transform: scale(1.08) rotate(2deg); box-shadow: 0 25px 50px -12px rgb(249 168 212); }
+        
+        .hero-bg {
+            background: linear-gradient(135deg, #ff8fab 0%, #c77dff 30%, #7b9cff 60%, #00d4ff 100%);
+            animation: gradientShift 15s ease infinite;
+        }
+        
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .product-card {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .product-card:hover {
+            transform: scale(1.08) rotate(2deg);
+            box-shadow: 0 25px 50px -12px rgb(249 168 212);
+        }
     </style>
 </head>
 <body class="bg-pink-50 text-gray-800">
@@ -26,109 +43,160 @@
                 <div class="text-4xl">✨</div>
                 <h1 class="heading-font text-3xl text-pink-600 tracking-tight">Aish Creations</h1>
             </div>
+            
             <div class="hidden md:flex items-center gap-x-8 text-lg font-medium">
                 <a href="#products" class="hover:text-pink-500 transition">Products</a>
                 <a href="#about" class="hover:text-pink-500 transition">About Us</a>
                 <a href="#gallery" class="hover:text-pink-500 transition">Gallery</a>
-                <a href="#payment" class="hover:text-pink-500 transition">Payment</a>
                 <a href="#contact" class="hover:text-pink-500 transition">Contact</a>
             </div>
+            
             <div class="flex items-center gap-x-4">
-                <a href="https://wa.me/916382623612" target="_blank" class="flex items-center gap-x-2 bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-3xl font-semibold transition">
+                <a href="https://wa.me/916382623612" target="_blank"
+                   class="flex items-center gap-x-2 bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-3xl font-semibold transition">
                     <i class="fa-brands fa-whatsapp text-2xl"></i>
                     <span>WhatsApp Us</span>
                 </a>
+                
                 <button onclick="toggleMobileMenu()" class="md:hidden text-3xl text-pink-600">
                     <i class="fa-solid fa-bars" id="menu-icon"></i>
                 </button>
             </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t px-6 py-6 text-lg font-medium">
+            <a href="#products" onclick="toggleMobileMenu()" class="block py-3">Products</a>
+            <a href="#about" onclick="toggleMobileMenu()" class="block py-3">About Us</a>
+            <a href="#gallery" onclick="toggleMobileMenu()" class="block py-3">Gallery</a>
+            <a href="#contact" onclick="toggleMobileMenu()" class="block py-3">Contact</a>
         </div>
     </nav>
 
     <!-- HERO -->
     <header class="hero-bg text-white py-20 md:py-28">
         <div class="max-w-7xl mx-auto px-6 text-center">
-            <h1 class="heading-font text-6xl md:text-7xl leading-none mb-6">Turning Your Memories into Beautiful Gifts</h1>
-            <p class="text-3xl md:text-4xl font-light max-w-2xl mx-auto mb-10">3D Miniatures • Custom Photo Albums • Fridge Magnets • Advanced Photo Frames • Personalized Gifts</p>
-            <a href="https://wa.me/916382623612" target="_blank" class="inline-flex items-center gap-x-3 bg-white text-pink-600 hover:bg-yellow-300 px-10 py-6 rounded-3xl font-semibold shadow-xl transition text-2xl">
+            <div class="inline-flex items-center gap-x-3 bg-white/30 backdrop-blur-md px-8 py-3 rounded-3xl mb-8 text-xl">
+                ✨ Handcrafted with Love in Chennai ✨
+            </div>
+            
+            <h1 class="heading-font text-6xl md:text-7xl leading-none mb-6">
+                Turning Your Memories<br>into Beautiful Gifts
+            </h1>
+            
+            <p class="text-3xl md:text-4xl font-light max-w-2xl mx-auto mb-10">
+                3D Miniatures • Custom Photo Albums • Fridge Magnets • Advanced Photo Frames • Personalized Gifts
+            </p>
+            
+            <a href="https://wa.me/916382623612" target="_blank"
+               class="inline-flex items-center gap-x-3 bg-white text-pink-600 hover:bg-yellow-300 px-10 py-6 rounded-3xl font-semibold shadow-xl transition text-2xl">
                 <i class="fa-brands fa-whatsapp text-4xl"></i>
                 Order on WhatsApp<br>
                 <span class="text-3xl">+91 63826 23612</span>
             </a>
+            
+            <p class="mt-10 text-lg opacity-90">Same-day design • Fast delivery across India • Perfect for birthdays, anniversaries, weddings &amp; corporate gifting</p>
         </div>
     </header>
 
-    <!-- PRODUCTS with Photos -->
+    <!-- PRODUCTS -->
     <section id="products" class="max-w-7xl mx-auto px-6 py-20">
         <h2 class="text-center text-5xl font-bold text-pink-600 mb-4 heading-font">Our Sparkling Products</h2>
+        <p class="text-center text-xl text-gray-600 mb-12">Made with love • Personalized just for you</p>
+        
         <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
-            <div class="product-card bg-white rounded-3xl overflow-hidden">
-                <img src="https://picsum.photos/id/1015/600/400" alt="3D Miniature" class="w-full h-64 object-cover">
-                <div class="p-6 text-center">
-                    <h3 class="text-2xl font-semibold mb-2">3D Miniatures</h3>
-                    <p class="text-gray-600">Custom 3D printed figurines of your loved ones or pets</p>
-                </div>
+            <div class="product-card bg-white rounded-3xl p-8 text-center border-4 border-pink-200">
+                <div class="text-7xl mb-6">🧍‍♂️</div>
+                <h3 class="text-2xl font-semibold mb-2">3D Miniatures</h3>
+                <p class="text-gray-600">Custom 3D printed figurines of your loved ones, pets or special moments</p>
             </div>
-            <div class="product-card bg-white rounded-3xl overflow-hidden">
-                <img src="https://picsum.photos/id/201/600/400" alt="Photo Album" class="w-full h-64 object-cover">
-                <div class="p-6 text-center">
-                    <h3 class="text-2xl font-semibold mb-2">Photo Albums</h3>
-                    <p class="text-gray-600">Premium hardcover, layflat & wedding photo albums</p>
-                </div>
+            <div class="product-card bg-white rounded-3xl p-8 text-center border-4 border-purple-200">
+                <div class="text-7xl mb-6">📖</div>
+                <h3 class="text-2xl font-semibold mb-2">Photo Albums</h3>
+                <p class="text-gray-600">Premium custom photo albums – hardcover, layflat, wedding &amp; memory books</p>
             </div>
-            <div class="product-card bg-white rounded-3xl overflow-hidden">
-                <img src="https://picsum.photos/id/133/600/400" alt="Fridge Magnet" class="w-full h-64 object-cover">
-                <div class="p-6 text-center">
-                    <h3 class="text-2xl font-semibold mb-2">Fridge Magnets</h3>
-                    <p class="text-gray-600">Personalized photo magnets & cute 3D magnets</p>
-                </div>
+            <div class="product-card bg-white rounded-3xl p-8 text-center border-4 border-yellow-200">
+                <div class="text-7xl mb-6">🧲</div>
+                <h3 class="text-2xl font-semibold mb-2">Fridge Magnets</h3>
+                <p class="text-gray-600">Personalized photo magnets, funny quotes &amp; 3D mini magnets</p>
             </div>
-            <div class="product-card bg-white rounded-3xl overflow-hidden">
-                <img src="https://picsum.photos/id/1005/600/400" alt="Photo Frame" class="w-full h-64 object-cover">
-                <div class="p-6 text-center">
-                    <h3 class="text-2xl font-semibold mb-2">Advanced Photo Frames</h3>
-                    <p class="text-gray-600">LED, floating, collage & luxury frames</p>
-                </div>
+            <div class="product-card bg-white rounded-3xl p-8 text-center border-4 border-cyan-200">
+                <div class="text-7xl mb-6">🖼️</div>
+                <h3 class="text-2xl font-semibold mb-2">Advanced Photo Frames</h3>
+                <p class="text-gray-600">LED, floating, collage &amp; luxury photo frames with your memories</p>
             </div>
-            <div class="product-card bg-white rounded-3xl overflow-hidden">
-                <img src="https://picsum.photos/id/1009/600/400" alt="Personalized Gifts" class="w-full h-64 object-cover">
-                <div class="p-6 text-center">
-                    <h3 class="text-2xl font-semibold mb-2">Personalized Gifts</h3>
-                    <p class="text-gray-600">Mugs, cushions, lamps & surprise gift boxes</p>
-                </div>
+            <div class="product-card bg-white rounded-3xl p-8 text-center border-4 border-rose-200">
+                <div class="text-7xl mb-6">🎁</div>
+                <h3 class="text-2xl font-semibold mb-2">Personalized Gifts</h3>
+                <p class="text-gray-600">Mugs, keychains, cushions, lamps &amp; surprise gift boxes for every occasion</p>
             </div>
         </div>
     </section>
 
-    <!-- PAYMENT SECTION -->
-    <section id="payment" class="bg-gradient-to-br from-pink-500 to-purple-600 text-white py-16">
+    <!-- ABOUT -->
+    <section id="about" class="bg-gradient-to-r from-pink-100 to-purple-100 py-20">
         <div class="max-w-4xl mx-auto px-6 text-center">
-            <h2 class="text-4xl font-bold heading-font mb-6">Easy Payment Options</h2>
-            <p class="text-2xl mb-10">After you send your photos on WhatsApp, we will send you the exact amount and payment link</p>
-            
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-2xl mx-auto">
-                <a href="https://wa.me/916382623612" target="_blank" class="bg-white text-pink-600 hover:bg-yellow-300 p-6 rounded-3xl flex flex-col items-center">
-                    <i class="fa-brands fa-whatsapp text-5xl mb-3"></i>
-                    <span class="font-semibold">WhatsApp</span>
-                </a>
-                <div class="bg-white text-pink-600 p-6 rounded-3xl flex flex-col items-center cursor-pointer" onclick="alert('You can add your UPI ID or Google Pay link here')">
-                    <i class="fa-solid fa-mobile-screen-button text-5xl mb-3"></i>
-                    <span class="font-semibold">UPI / GPay</span>
-                </div>
-                <div class="bg-white text-pink-600 p-6 rounded-3xl flex flex-col items-center cursor-pointer" onclick="alert('You can add your PhonePe link here')">
-                    <i class="fa-solid fa-qrcode text-5xl mb-3"></i>
-                    <span class="font-semibold">PhonePe</span>
-                </div>
-                <div class="bg-white text-pink-600 p-6 rounded-3xl flex flex-col items-center cursor-pointer" onclick="alert('You can add your Bank details here')">
-                    <i class="fa-solid fa-building-columns text-5xl mb-3"></i>
-                    <span class="font-semibold">Bank Transfer</span>
-                </div>
-            </div>
+            <h2 class="text-5xl font-bold heading-font text-pink-700 mb-8">Hi, we are Aish Creations! ✨</h2>
+            <p class="text-2xl leading-relaxed text-gray-700">
+                A small family-run business in Chennai that turns your precious photos and memories into beautiful, lasting gifts. 
+                From cute 3D miniatures to elegant photo frames and custom albums – every piece is made with love and care.
+            </p>
         </div>
     </section>
 
-    <!-- REST OF THE PAGE (About, Gallery, Contact, Footer) remains the same -->
-    <!-- (I kept them short here for space – full code is ready) -->
+    <!-- GALLERY -->
+    <section id="gallery" class="max-w-7xl mx-auto px-6 py-20 bg-white">
+        <h2 class="text-center text-5xl font-bold text-pink-600 mb-12 heading-font">Real Moments, Real Smiles</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <div class="aspect-square bg-gradient-to-br from-pink-400 to-purple-400 rounded-3xl flex flex-col items-center justify-center text-white text-center p-6">
+                <div class="text-8xl mb-4">🧍‍♀️</div>
+                <p class="font-medium">3D Miniature of your baby</p>
+            </div>
+            <div class="aspect-square bg-gradient-to-br from-yellow-400 to-rose-400 rounded-3xl flex flex-col items-center justify-center text-white text-center p-6">
+                <div class="text-8xl mb-4">📸</div>
+                <p class="font-medium">Custom Photo Album</p>
+            </div>
+            <div class="aspect-square bg-gradient-to-br from-cyan-400 to-blue-400 rounded-3xl flex flex-col items-center justify-center text-white text-center p-6">
+                <div class="text-8xl mb-4">🧲</div>
+                <p class="font-medium">Personalized Fridge Magnet</p>
+            </div>
+            <div class="aspect-square bg-gradient-to-br from-purple-400 to-pink-400 rounded-3xl flex flex-col items-center justify-center text-white text-center p-6">
+                <div class="text-8xl mb-4">🖼️</div>
+                <p class="font-medium">LED Photo Frame</p>
+            </div>
+        </div>
+        <p class="text-center text-pink-500 mt-10 text-sm">* More designs available on WhatsApp – send your photos and we’ll create magic!</p>
+    </section>
+
+    <!-- CONTACT / ORDER -->
+    <section id="contact" class="bg-gradient-to-br from-pink-500 to-purple-600 text-white py-20">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-5xl font-bold heading-font mb-6">Ready to Sparkle?</h2>
+            <p class="text-3xl mb-10">Send your photos on WhatsApp and get your custom gift in just a few days!</p>
+            
+            <a href="https://wa.me/916382623612" target="_blank"
+               class="inline-flex items-center gap-x-4 bg-white text-pink-600 hover:bg-yellow-300 px-12 py-8 rounded-3xl text-3xl font-semibold">
+                <i class="fa-brands fa-whatsapp text-6xl"></i>
+                +91 63826 23612
+            </a>
+            
+            <p class="mt-8 text-xl">📍 Chennai, Tamil Nadu</p>
+            <p class="mt-3 text-lg">Email: aishcreations3@gmail.com</p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-white py-12 text-center">
+        <div class="max-w-7xl mx-auto px-6">
+            <p class="text-3xl mb-4">✨ Aish Creations ✨</p>
+            <p class="text-pink-300">Personalized Gifts • 3D Miniatures • Photo Albums • Fridge Magnets • Premium Frames</p>
+            <p class="mt-6 text-sm text-gray-400">
+                Made with ❤️ in Chennai, India<br>
+                For custom orders &amp; pricing, message us on WhatsApp anytime
+            </p>
+            <p class="text-xs text-gray-500 mt-8">© Aish Creations • Built as a free website</p>
+        </div>
+    </footer>
 
     <script>
         function toggleMobileMenu() {
@@ -142,6 +210,16 @@
                 icon.classList.replace('fa-xmark', 'fa-bars');
             }
         }
+        
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
     </script>
 </body>
 </html>
